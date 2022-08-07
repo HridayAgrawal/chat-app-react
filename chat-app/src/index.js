@@ -19,6 +19,8 @@ root.render(
 // Project Console: https://console.firebase.google.com/project/chat-app-ab341/overview
 // Hosting URL: https://chat-app-ab341.web.app
 
+//Hosting URL: https://chat-app-ab341.web.app
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

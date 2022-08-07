@@ -1,0 +1,33 @@
+[debug] [2022-08-07T15:45:41.078Z] ----------------------------------------------------------------------
+[debug] [2022-08-07T15:45:41.080Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hrida\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-08-07T15:45:41.081Z] CLI Version:   11.4.2
+[debug] [2022-08-07T15:45:41.081Z] Platform:      win32
+[debug] [2022-08-07T15:45:41.081Z] Node Version:  v16.15.0
+[debug] [2022-08-07T15:45:41.082Z] Time:          Sun Aug 07 2022 21:15:41 GMT+0530 (India Standard Time)
+[debug] [2022-08-07T15:45:41.083Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-07T15:45:41.150Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-07T15:45:41.150Z] > authorizing via signed-in user (hriday.agrawal03@gmail.com)
+[debug] [2022-08-07T15:45:41.151Z] [iam] checking project chat-app-ab341 for permissions ["firebase.projects.get"]
+[debug] [2022-08-07T15:45:41.153Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-ab341:testIamPermissions [none]
+[debug] [2022-08-07T15:45:41.153Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-ab341:testIamPermissions x-goog-quota-user=projects/chat-app-ab341
+[debug] [2022-08-07T15:45:41.153Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-ab341:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-08-07T15:45:43.712Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-ab341:testIamPermissions 200
+[debug] [2022-08-07T15:45:43.713Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-ab341:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-08-07T15:45:43.714Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-ab341 [none]
+[debug] [2022-08-07T15:45:45.002Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-ab341 200
+[debug] [2022-08-07T15:45:45.002Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-ab341 {"projectId":"chat-app-ab341","projectNumber":"101950826180","displayName":"Chat-App","name":"projects/chat-app-ab341","resources":{"hostingSite":"chat-app-ab341","realtimeDatabaseInstance":"chat-app-ab341-default-rtdb","storageBucket":"chat-app-ab341.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_956e2f9f-10c1-4b84-b18d-cececf266712"}
+[info] 
+[info] === Serving from 'C:\Users\hrida\React\chat-app-react\chat-app'...
+[info] 
+[debug] [2022-08-07T15:45:45.005Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/chat-app-ab341/sites 
+[debug] [2022-08-07T15:45:47.189Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/chat-app-ab341/sites 200
+[debug] [2022-08-07T15:45:47.189Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/chat-app-ab341/sites {"sites":[{"name":"projects/chat-app-ab341/sites/chat-app-ab341","defaultUrl":"https://chat-app-ab341.web.app","appId":"1:101950826180:web:b3238e1aee97e845eb4b91","type":"DEFAULT_SITE"}]}
+[debug] [2022-08-07T15:45:47.190Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-ab341/webApps/1:101950826180:web:b3238e1aee97e845eb4b91/config [none]
+[debug] [2022-08-07T15:45:48.746Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-ab341/webApps/1:101950826180:web:b3238e1aee97e845eb4b91/config 200
+[debug] [2022-08-07T15:45:48.747Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-ab341/webApps/1:101950826180:web:b3238e1aee97e845eb4b91/config {"projectId":"chat-app-ab341","appId":"1:101950826180:web:b3238e1aee97e845eb4b91","databaseURL":"https://chat-app-ab341-default-rtdb.firebaseio.com","storageBucket":"chat-app-ab341.appspot.com","locationId":"us-central","apiKey":"AIzaSyDhIuIKzemkzIqicpuYDGyUsrk3kL_OIeM","authDomain":"chat-app-ab341.firebaseapp.com","messagingSenderId":"101950826180","measurementId":"G-42HXW3W4VY"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [07/Aug/2022:15:46:02 +0000] "GET / HTTP/1.1" 200 643 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Aug/2022:15:46:02 +0000] \"GET / HTTP/1.1\" 200 643 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Aug/2022:15:46:02 +0000] "GET /static/css/main.4d804ca8.css HTTP/1.1" 200 3450 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Aug/2022:15:46:02 +0000] \"GET /static/css/main.4d804ca8.css HTTP/1.1\" 200 3450 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Aug/2022:15:46:02 +0000] "GET /static/js/main.a3a8b805.js HTTP/1.1" 200 897080 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Aug/2022:15:46:02 +0000] \"GET /static/js/main.a3a8b805.js HTTP/1.1\" 200 897080 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36\""}}
